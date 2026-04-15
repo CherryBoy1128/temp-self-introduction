@@ -45,11 +45,6 @@ function App() {
           <div className=""></div>
         </div>
 
-        <div className="profile-row">  
-          <div className="label"></div>
-          <div className=""></div>
-        </div>
-
       </div>
     </div>
   );

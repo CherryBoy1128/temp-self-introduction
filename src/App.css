@@ -10,7 +10,7 @@
 }
 
 .top-section {
-  background-color: #eca6e7;
+  background-color: #eca6e7; /*←ここを好きな色に変えてみよう！（#の左の四角を押してみよう！）*/
   position: relative;          /*触らないで*/
   padding: 40px 0 80px;        /*触らないで*/
   z-index: 1;                  /*触らないで*/
@@ -49,6 +49,7 @@
   position: relative;     /*触らないで*/
   z-index: 2;             /*触らないで*/
   display: flex;          /*触らないで*/
+  flex-direction: column; /*触らないで*/
 }
 
 .profile-row {

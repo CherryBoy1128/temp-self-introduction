@@ -1,71 +1,53 @@
-# Getting Started with Create React App
+#  自己紹介カードを作ってみよう！
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+「どこを書き換えたら、どう変わるか」をまとめたので、自分の好きなデザインに改造してみましょう！
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  1. 文字を書き換える (`src/App.js`)
 
-### `npm start`
+`src/App.js` を開いて、コメント（`{/* ... */}`）が書いてある場所を自分の情報に書き換えましょう。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **名前や学科を書き込む**
+  `<div>` と `</div>` の間に文字を入れれば画面に表示されます。
+  
+  <例>
+  　<div className="name">自分の名前</div>
+  　<div className="myDepartment">〇〇〇工学科</div>
+  全部で６つ以上の項目を作ってください。３つは決めさせてもらいましたが、あとの３つ以上は自分の書きたいものを書いてください！
+  
+###  2. 文字にスタイルを当てる（'src/App.css'）
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`App.css`の13行目のカラーを変えると上部の背景の色を変えることができます。
 
-### `npm test`
+* **ClassNameをApp.CSSに書いてスタイルを当てる**
+  <例>　　　　　　　　↓これ 
+  　<div className="name">自分の名前</div>　　（App.js）
+  　
+  　.name{
+       ここにスタイルを当てるコードを書く
+    }　　　　　　　　　　　　　　　　　　　　　 　(App,css)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**今回使えそうなコード一覧**
+**文字のデザイン**
+color: したい色;        文字の色を変える
+font-size: 〇px;        文字のサイズを変える
+font-weight: bold; 　　　文字の太さを変える（pxで指定もできるが、基本これでいい）
+text-align: center; 　　　文字のある場所が変わる（これだと中央寄せ）
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**写真関連**
+background-image: url(画像のURL);
+width: 〇px;              画像の横幅を変える
+height: 〇px;             画像の高さを変える
+border-radius: 〇%;       触らないで画像の角を丸める
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**余白・配置**
+margin: 〇px;             文字のある要素の外側に空白を作る
+padding: 〇px;            文字のある要素の内側に空白を作る
+background-color: 〇px;   背景の色を変える
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# temp-self-introduction" 
+保存（Ctrl + S）をした瞬間に画面が更新されます
+間違えてしまっても、Ctrl + Z　でもとに戻そう！
+エラーが出たり、わからないことがあれば、気軽に先輩に聞いてください！

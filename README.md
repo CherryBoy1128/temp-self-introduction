@@ -15,6 +15,13 @@
   　<div className="name">自分の名前</div>
   　<div className="myDepartment">〇〇〇工学科</div>
   全部で６つ以上の項目を作ってください。３つは決めさせてもらいましたが、あとの３つ以上は自分の書きたいものを書いてください！
+
+  <div className="profile-row">  
+    <div className="label"></div>
+    <div className=""></div>
+  </div>
+
+　７個以上書きたい人は上のコードをコピペして使ってください！（わからなかったら先輩に聞いてください）
   
 ###  2. 文字にスタイルを当てる（'src/App.css'）
 
